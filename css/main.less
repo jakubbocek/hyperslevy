@@ -1,0 +1,119 @@
+// Core variables and mixins
+@import (less) "../bower_components/bootstrap/less/variables.less";
+@import (less) "../bower_components/bootstrap/less/mixins.less";
+// Reset and dependencies
+@import (less) "../bower_components/bootstrap/less/normalize.less";
+@import (less) "../bower_components/bootstrap/less/print.less";
+@import (less) "../bower_components/bootstrap/less/glyphicons.less";
+// Core CSS
+@import (less) "../bower_components/bootstrap/less/scaffolding.less";
+@import (less) "../bower_components/bootstrap/less/type.less";
+
+
+
+@import (less) "../bower_components/bootstrap/less/carousel.less";
+
+@import (less) "../bower_components/bootstrap/less/grid.less";
+@import (less) "../bower_components/bootstrap/less/forms.less";
+@import (less) "../bower_components/bootstrap/less/buttons.less";
+// Components
+@import (less) "../bower_components/bootstrap/less/component-animations.less";
+@import (less) "../bower_components/bootstrap/less/dropdowns.less";
+@import (less) "../bower_components/bootstrap/less/button-groups.less";
+
+@import (less) "../bower_components/bootstrap/less/input-groups.less";
+
+@import (less) "../bower_components/bootstrap/less/navs.less";
+@import (less) "../bower_components/bootstrap/less/navbar.less";
+
+
+@import (less) "../bower_components/bootstrap/less/media.less";
+
+
+@import (less) "../bower_components/bootstrap/less/responsive-embed.less";
+
+
+// Utility classes
+@import (less) "../bower_components/bootstrap/less/utilities.less";
+@import (less) "../bower_components/bootstrap/less/responsive-utilities.less";
+
+
+
+@import (less) "../css/common.less";
+@import (less) "../css/sprites.less";
+
+
+
+@import (less) "../bower_components/slick-carousel/slick/slick.css";
+
+
+
+
+
+html,
+body {
+    min-height: 100%;
+}
+
+html {
+    min-height: 100%;
+}
+
+
+body {
+    background: #a01616;
+    @media @min-md{
+      background: url(../images/bg-hp.png) top 46px center repeat-x #a01616
+    }
+    @media @sm{
+        background: url(../images/bg-hp.png) top 66px center repeat-x #a01616
+    }
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    overflow-x: hidden!important;
+    overflow-y: scroll!important;
+    color: @white;
+    -webkit-overflow-scrolling: touch;
+
+
+   /* display: flex;
+    flex-direction: column;
+    height: 100vh;*/
+}
+
+/*.content{
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+*/
+
+
+
+.container
+{
+    @media @lg{
+      width: 1010px;
+    }
+
+    @media @md{
+      width: 980px;
+    }
+    @media @sm
+    {
+        width: 750px;        
+    }
+    
+    @media @xs
+    {
+        width: 100%;        
+    }
+}
+
+
+
+
+@import (less) "../css/mixins.less";
+@import (less) "../css/_header.less";
+@import (less) "../css/_footer.less";
+@import (less) "../css/_hp.less";
